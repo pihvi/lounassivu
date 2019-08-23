@@ -88,8 +88,8 @@ def index(request):
             "factory": crawl_factory(),
         }
     )
-    return HttpResponse('Hello from Python!' + str(data))
-    #return render(request, "index.html")
+    # return HttpResponse('Hello from Python!' + str(data))
+    return render(request, "lounas.html", {"list": data.items()})
 
 
 def db(request):
