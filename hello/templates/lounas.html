@@ -18,6 +18,7 @@
     h2,
     h3 {
       line-height: 1.2;
+      text-transform: capitalize;
     }
   </style>
 </head>
@@ -26,6 +27,7 @@
   <h1>Ruokaa!</h1>
 
     {% for title, items in list %}
+      <h2> {{ title }}: </h2>
         {% if items %}
           <ul>
             {% for item in items %}
